@@ -5,6 +5,11 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
+const element = document.getElementById("btn");
+element.addEventListener("click", function() {
+  document.getElementById("domain").innerHTML = RandomDomain();
+});
+
 window.onload = () => {
   document.querySelector("#btn");
   document.querySelector(`#domain`).innerHTML = RandomDomain();
